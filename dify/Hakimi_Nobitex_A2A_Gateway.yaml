@@ -10,7 +10,15 @@ kind: app
 version: 0.6.0
 workflow:
   conversation_variables: []
-  environment_variables: []
+  environment_variables:
+  - description: کلید محرمانه API_KEY در فایل محلی .env سرویس A2A؛ پس از Import مقدار را در Dify Studio تنظیم کنید.
+    id: c6b1f0b2-3a7d-4f8c-9e2b-7d4a1f5c8b30
+    name: A2A_API_KEY
+    selector:
+    - env
+    - A2A_API_KEY
+    value: ''
+    value_type: secret
   features:
     opening_statement: ''
     suggested_questions: []
@@ -105,7 +113,7 @@ workflow:
         authorization:
           type: no-auth
           config: null
-        headers: ''
+        headers: 'X-API-Key: {{#env.A2A_API_KEY#}}'
         params: ''
         body:
           type: none
