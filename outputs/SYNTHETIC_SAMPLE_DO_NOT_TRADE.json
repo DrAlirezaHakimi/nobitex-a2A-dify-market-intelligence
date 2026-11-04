@@ -1,0 +1,29 @@
+{
+  "notice": "SYNTHETIC DEMONSTRATION DATA — DO NOT TRADE",
+  "project": "Hakimi Nobitex A2A Market Intelligence",
+  "mode": "demo",
+  "data_status": "SYNTHETIC DEMONSTRATION DATA",
+  "generated_at": "2026-11-04T00:00:00+00:00",
+  "execution_enabled": false,
+  "metrics": {
+    "raw_orderbook_markets": 1,
+    "symbols_in_valid_books": 1,
+    "screened": 1,
+    "rejected": 0,
+    "eligible": 1,
+    "a2a_evaluated": 1,
+    "buy_candidates": 0,
+    "sell_candidates": 0,
+    "hold": 1,
+    "errors": 0
+  },
+  "best_buy": null,
+  "best_sell": null,
+  "recommendation": null,
+  "opportunities": [],
+  "method": {
+    "score": "Heuristic ranking, NOT predicted win probability",
+    "short_selling": "Not supported",
+    "execution": "Disabled"
+  }
+}
