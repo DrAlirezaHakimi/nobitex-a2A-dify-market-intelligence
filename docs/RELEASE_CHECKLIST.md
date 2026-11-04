@@ -14,5 +14,5 @@
 - [x] Documentation states that scores are heuristics and real trading is disabled.
 - [x] Local validation: `python -m compileall -q app tests` succeeded.
 - [x] Local validation: `python -m pytest -q` — 17 passed.
-- [ ] Verify GitHub Actions workflow after initial push.
+- [x] GitHub Actions verification passed for the latest source commit (Python 3.12 and 3.13): [run #18](https://github.com/DrAlirezaHakimi/nobitex-a2A-dify-market-intelligence/actions/runs/41817039714).
 - [ ] Re-import or update existing Dify workflows with the secured YAML and set the A2A_API_KEY secret in Dify Studio.
