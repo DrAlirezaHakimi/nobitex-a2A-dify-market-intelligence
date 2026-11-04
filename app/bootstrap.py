@@ -23,7 +23,7 @@ def ensure_env():
                        'DIFY_API_KEY=\n'
                        'DIFY_API_BASE=https://api.dify.ai/v1\n'
                        'MARKET_TTL=70\nMAX_PARALLEL=12\nMAX_DEEP=300\n', encoding='utf-8')
-        print('[CONFIG] Created .env with a strong random A2A backend API_KEY; copy it to Dify's secret A2A_API_KEY environment variable if using a Workflow.')
+        print("[CONFIG] Created .env with a strong random A2A backend API_KEY; copy it to the Dify secret A2A_API_KEY environment variable if using a Workflow.")
     load_dotenv(ENV, override=True)
     token = os.getenv('API_KEY', '')
     if len(token) < 24 or token.startswith(('REPLACE_', 'YOUR_')):
