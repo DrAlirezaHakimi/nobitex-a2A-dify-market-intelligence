@@ -60,7 +60,7 @@ The Compose configuration binds services to loopback. Do not run native startup 
 
 ## Dify integration
 
-Import one of the YAML workflow files from `dify/` into Dify Studio, configure its backend URL and publish the workflow. For Dify Cloud, the A2A backend must be reachable through a valid HTTPS endpoint. Keep the dashboard on loopback; expose only the API port when needed. The Dify App API key belongs in the server-side `.env` file, never in browser code or a committed workflow.
+Import one of the YAML workflow files from `dify/` into Dify Studio, set the secret environment variable `A2A_API_KEY` to the local backend's `API_KEY` value, and publish the workflow. The HTTP Request node sends it as `X-API-Key`. For Dify Cloud, the A2A backend must be reachable through a valid HTTPS endpoint. Keep the dashboard on loopback; expose only the API port when needed. Separately, `DIFY_API_KEY` in the local `.env` is the Dify App API key used by the local dashboard to call the published Workflow. These two keys are different. Never put real keys in browser code or committed YAML.
 
 ## Important implementation boundaries
 
