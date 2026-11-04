@@ -25,8 +25,9 @@ The agents run in one Python process; they are not separate microservices. The A
 1. Import a YAML workflow from `dify/` into Dify Studio.
 2. Configure the backend URL to reach the API on port 8000.
 3. For Dify Cloud, expose only the API through HTTPS. Keep the dashboard loopback-only.
-4. Publish the Workflow and keep its Dify App API key in the server-side `.env` file.
-5. Never commit `.env`, API keys, ngrok tokens or private credentials.
+4. In Dify Environment Variables, set the Secret `A2A_API_KEY` to the same value as the local backend `API_KEY`; the workflow sends it in the `X-API-Key` header.
+5. The Dify App API key created under Access Point is a different credential. Store it as `DIFY_API_KEY` in the local `.env` so the local dashboard can call the published workflow.
+6. Never commit `.env`, API keys, ngrok tokens or private credentials.
 
 ## Linux and Docker
 
