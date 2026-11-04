@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you reference this software, please cite it as follows."
+title: "Nobitex A2A × Dify — Integrated Market Intelligence"
+authors:
+  - family-names: Hakimi
+    given-names: Alireza
+    name-particle: Dr.
+version: "1.0.0"
+date-released: "2026-11-04"
+url: "https://github.com/DrAlirezaHakimi/nobitex-a2a-dify-market-intelligence"
